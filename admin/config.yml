@@ -6,11 +6,12 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "content"
-    label: "Content"
+  - name: "pages"
+    label: "Pages"
     files:
-      - label: "Home"
+      - label: "Home Page"
         name: "home"
-        file: "index.html"
+        file: "content/home.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
